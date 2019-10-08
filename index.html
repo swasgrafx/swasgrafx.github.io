@@ -2,21 +2,42 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Chad Svastisalee CSM</title>
+        <title>Chad Svastisalee, CSM</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <header>
+            <span class="logo">Chad Svastisalee, CSM</span>
+            <a id="toggleMenu">Menu<a></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
         <h1>Chad Svastisalee</h1>
         <img 
-            style="border-radius: 50%; float: left; margin-right: 1em;"
-            src="https://s.gravatar.com/avatar/ccb8db9b92f24f1bf1dc575a85c78feb?s=80" alt="My Avatar">
-    <p>Welcome To My Home Page</p>
+        class="avatar"
+        src="https://s.gravatar.com/avatar/ccb8db9b92f24f1bf1dc575a85c78feb?s=80" alt="My Avatar">
+        <p>Welcome To My Home Page</p>
+        </main>
+            <script>
+                var toggleMenu = document.getElementById('toggleMenu');
+                var nav = document.querySelector('nav');
+                toggleMenu.addEventListener(
+                  'click',
+                  function(){
+                    if(nav.style.display=='block'){
+                      nav.style.display='none';
+                    }else{
+                      nav.style.display='block';
+                    }
+                  }
+                );
+            </script>
     </body>
 </html>
